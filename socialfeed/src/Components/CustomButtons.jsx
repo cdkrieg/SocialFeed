@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../App";
 
-const CustomButtons = (props) => {
+const CustomButtons = () => {
   const [likeButtonState, setLikeButtonState] = useState("inactive");
   const [dislikeButtonState, setDislikeButtonState] = useState("inactive");
   const handleClick = (event) => {
