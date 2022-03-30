@@ -46,7 +46,7 @@ const CreatePost = (props) => {
           className="btn btn-primary"
           style={{ "marginTop": "1em" }}
         >
-          Add
+          Submit
         </button>
       </form>
     );

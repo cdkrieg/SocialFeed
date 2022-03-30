@@ -10,3 +10,7 @@
 label{
     text-align: right;
 }
+.btn{
+    background-color: rgb(60, 8, 119);
+    color: ivory;
+}
