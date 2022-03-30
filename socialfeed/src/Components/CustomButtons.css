@@ -1,0 +1,9 @@
+button{
+    background-color:ivory;
+}
+#likeButton.active{
+    background-color: greenyellow;
+}
+#dislikeButton.active{
+    background-color: red;
+}

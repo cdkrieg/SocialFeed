@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../App";
+import './CustomButtons.css'
 
 const CustomButtons = () => {
   const [likeButtonState, setLikeButtonState] = useState("inactive");
@@ -30,10 +31,12 @@ const CustomButtons = () => {
 
   return (
     <div>
+    <br/>
       <button
         className={likeButtonState}
         onClick={handleClick}
         name="likeButton"
+        id="likeButton"
       >
         Like
       </button>
@@ -42,6 +45,7 @@ const CustomButtons = () => {
         className={dislikeButtonState}
         onClick={handleClick}
         name="dislikeButton"
+        id="dislikeButton"
       >
         Dislike
       </button>

@@ -14,7 +14,7 @@ function App() {
     <div>
       <NavBar />
       <CustomButtons /> 
-     <h1>Hello World!</h1>
+      
     </div>
   );
 }
