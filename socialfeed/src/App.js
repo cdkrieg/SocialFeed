@@ -3,8 +3,7 @@ import React from 'react';
 import './Components/CreatePost';
 import CreatePost from './Components/CreatePost';
 import './Components/DisplayPosts';
-// import './Components/Post';
-import CustomButtons from './Components/CustomButtons';
+import Post from './Components/Post';
 import NavBar from './Components/NavBar';
 import DisplayPosts from './Components/DisplayPosts';
 
@@ -15,8 +14,8 @@ function App() {
     <div>
       <NavBar />
       <CreatePost />
+      <Post />
       <DisplayPosts />
-      <CustomButtons /> 
 
     </div>
   );

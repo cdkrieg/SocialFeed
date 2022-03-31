@@ -1,21 +1,27 @@
-import React, { useState } from 'react';
 
 
 const DisplayPosts = (props) => {
-    const [posts, setPosts] = useState([])
-
-    function displayPosts({nameMessage}){
-        setPosts(
-            posts.push({nameMessage})
-        );
-        return posts;
-}
-
     return ( 
-        <div className="container">
-            <p></p>
-        </div>
-
+        <table className='table'>
+        <thead>
+          <tr>
+            <th>Entry Number</th>
+            <th>Weight</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          {props.parentEntries.map((entry, index) => {
+            return(
+              <tr key={index}> 
+                <td>{index + 1}</td>
+                <td>{entry.weight}</td>
+                <td>{entry.date}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>  
      );
 }
  
