@@ -8,3 +8,6 @@ button{
 #dislikeButton.active{
     background-color: red;
 }
+.customButtons{
+    align-self: right;
+}

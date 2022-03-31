@@ -30,7 +30,7 @@ const CustomButtons = () => {
   };
 
   return (
-    <div>
+    <div className="customButtons">
     <br/>
       <button
         className={likeButtonState}
@@ -38,7 +38,7 @@ const CustomButtons = () => {
         name="likeButton"
         id="likeButton"
       >
-        Like
+        Like 👍
       </button>
 
       <button
@@ -47,7 +47,7 @@ const CustomButtons = () => {
         name="dislikeButton"
         id="dislikeButton"
       >
-        Dislike
+        Dislike 👎
       </button>
     </div>
   );
