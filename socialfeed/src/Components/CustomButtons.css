@@ -1,6 +1,6 @@
 button{
     background-color:ivory;
-    margin: 0 20px 0 20px;
+    margin: auto;
 }
 #likeButton.active{
     background-color: greenyellow;
@@ -9,5 +9,7 @@ button{
     background-color: red;
 }
 .customButtons{
-    align-self: right;
+    display: flex;
+    align-items: center;
+
 }

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "./CreatePost.css";
+import { DateTime } from './DateTime';
 
 const CreatePost = (props) => {
     const [message, setMessage] = useState("");
@@ -52,6 +53,7 @@ const CreatePost = (props) => {
         >
           Submit
         </button>
+        <hr />
       </form>
     );
   };

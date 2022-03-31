@@ -5,7 +5,7 @@ import './NavBar.css'
 
 const NavBar = () => {
   return (
-    <Navbar id="navbar" bg="dark" variant="dark">
+    <Navbar id="navbar" >
       <Navbar.Brand  id="navbarBrand">Social Feed</Navbar.Brand>
     </Navbar>
   );
