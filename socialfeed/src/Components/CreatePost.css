@@ -1,16 +1,23 @@
 
-#multiline{
-    border: 1px solid black;
-    min-width: 200px;
+#message{
+    text-align: left;
     
 }
 .form-group{
     max-width: 300px;
+    box-sizing: border-box;
+    border: lightskyblue;
+    border-width: 3px;
+    overflow-wrap: break-word; 
+    margin-left: 10px
+;
 }
 label{
-    text-align: right;
+    font-weight: bolder;
 }
 .btn{
-    background-color: rgb(60, 8, 119);
+    background-color: rgb(71, 11, 139);
     color: ivory;
+    margin-left: 37%;
+
 }

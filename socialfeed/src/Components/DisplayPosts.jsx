@@ -6,8 +6,8 @@ const DisplayPosts = (props) => {
             {props.displayPosts.map((post,index)=>{
                 return(
                     <div key={index}>
-                        <p>{post.name}</p>
-                        <p>{post.message}</p>
+                        <p id="name">{post.name + " says:"}</p>
+                        <p id="message">{'"' + post.message + '"'}</p>
                         <Post />
                     </div>
                 )

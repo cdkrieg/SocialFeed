@@ -1,13 +1,14 @@
 import React from 'react';
 import CustomButtons from './CustomButtons';
-
+import './Post.css'
 
 const Post = (props) => {
     return ( 
         <div>
-            <p className="name">{props.name}</p>
-            <p className="message">{props.message}</p>
+            <p id="name">{props.name}</p>
+            <p id="message">{props.message}</p>
             <CustomButtons />
+            <hr />
             
         </div>
      );

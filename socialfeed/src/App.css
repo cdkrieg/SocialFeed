@@ -1,14 +1,16 @@
-.App {
-  width: 100vw;
-  height: auto;
-  align-content: center;
+.borders{
+  display: grid;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: rgb(175, 244, 245);
+
 }
+.container-fluid{
+  max-width: 400px;
+  max-height: fit-content;
 
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-
+.navbar{
+  border-radius: 10px;
+  ;
+}

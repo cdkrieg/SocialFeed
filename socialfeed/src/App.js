@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-
+import './App.css'
 import './Components/CreatePost';
 import CreatePost from './Components/CreatePost';
 import './Components/DisplayPosts';
-import Post from './Components/Post';
 import NavBar from './Components/NavBar';
 import DisplayPosts from './Components/DisplayPosts';
 
@@ -15,11 +14,12 @@ function App() {
     }
 
   return (
-    <div className="container-sm">
-      <NavBar />
-      <CreatePost addNewPost={addNewPost}/>
-      <DisplayPosts displayPosts={posts}/>
-
+    <div className="container-fluid">
+      <NavBar className="navbar"/>
+      <div className='borders'>
+        <CreatePost addNewPost={addNewPost}/>
+        <DisplayPosts displayPosts={posts}/>
+        </div>
     </div>
   );
 }

@@ -28,6 +28,7 @@ const CreatePost = (props) => {
                 className="form-control"
                 value={name}
                 onChange={(event) => setName(event.target.value)}
+                id="name"
             />
         </div>
         <div className="form-group">
@@ -38,6 +39,7 @@ const CreatePost = (props) => {
                 className="form-control"
                 value={message}
                 onChange={(event) => setMessage(event.target.value)}
+                id="message"
                 
                 
             />
