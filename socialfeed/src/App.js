@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './Components/CreatePost';
 import CreatePost from './Components/CreatePost';
@@ -8,14 +8,17 @@ import NavBar from './Components/NavBar';
 import DisplayPosts from './Components/DisplayPosts';
 
 function App() {
-
+  const [posts, setPosts] = useState([{name: "Chris Krieg", message: "This is a test message!"}]);
+    function addNewPost(post) {
+      let tempPosts = [...posts, post];
+      setPosts(tempPosts);
+    }
 
   return (
-    <div>
+    <div className="container-sm">
       <NavBar />
-      <CreatePost />
-      <Post />
-      <DisplayPosts />
+      <CreatePost addNewPost={addNewPost}/>
+      <DisplayPosts displayPosts={posts}/>
 
     </div>
   );

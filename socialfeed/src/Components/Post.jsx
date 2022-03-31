@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import CustomButtons from './CustomButtons';
-import { Container } from 'react-bootstrap';
 
 
 const Post = (props) => {
@@ -9,7 +8,7 @@ const Post = (props) => {
             <p className="name">{props.name}</p>
             <p className="message">{props.message}</p>
             <CustomButtons />
-            <hr />
+            
         </div>
      );
 }

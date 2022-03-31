@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { MultilineInput } from 'react-input-multiline';
 import "./CreatePost.css";
 
 const CreatePost = (props) => {
@@ -8,13 +7,16 @@ const CreatePost = (props) => {
   
     function handleSubmit(event) {
       event.preventDefault();
-      let newEntry = {
-        message: message,
+      let newPost = {
         name: name,
+        message: message
       };
-      console.log(newEntry);
-      props.addNewEntry(newEntry);
+      console.log(newPost);
+      props.addNewPost(newPost);
+      setName(" ");
+      setMessage(" ");
     }
+
   
     return (
       <form onSubmit={handleSubmit} className='form-grid'>
@@ -31,10 +33,10 @@ const CreatePost = (props) => {
         <div className="form-group">
             <label>Message  </label>
             <br/>
-            <MultilineInput
+            <input
+                type="text"
                 className="form-control"
                 value={message}
-                id="multiline"
                 onChange={(event) => setMessage(event.target.value)}
                 
                 
