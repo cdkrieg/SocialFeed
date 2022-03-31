@@ -21,3 +21,6 @@ label{
     margin-left: 37%;
 
 }
+#name{
+    text-transform: capitalize;
+}
